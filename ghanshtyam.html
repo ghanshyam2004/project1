@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="ghanshyam.css">
 </head>
 <body>
+    <ba>  Indian Railway's </ba>
     <form action="">
-    
-        <H1>BOOK TICKET</H1>
-        <TR>
-            <TD>
-                <INPUT type="text" placeholder="from">
-                </INPUT>
-            </TD>
-            <td>
-                DD/MM/YYYY*
-                <input type="date">
-            </td>
-        </TR>
+    <table cellspacing="20">
+        <h1>BOOK TICKET</h1>
         <tr>
             <td>
-            <input type="text" placeholder="TO">
-        </td>
+            <p>location</p> 
+                <input type="text" placeholder="from">
+            </td>
+                <td>
+                    <p>Destination</p>
+                <input type="text" placeholder="TO">
+            </td> 
+        </tr>
+     <tr> <td>
+            <p>Date</p>                
+                <input type="date">
+            </td>
         <td>
+            <p>Class</p>
             <select placeholder="ALL Classes" name="ALL Classes" id="">
            <option value=" 1A – First Class AC"> 1A – First Class AC</option>
            <option value=" 2A – Two-Tier AC"> 2A – Two-Tier AC</option>
@@ -34,7 +38,7 @@
         </td>
         </tr>
         <tr>
-           <td>
+           <td><p>Quota</p>
             <select placeholder="GENERAL" name="GENERAL" id="">
                 <option value="General Quata  ">General Quata  </option>
                 <option value="Tatkal Quata ">Tatkal Quata </option>
@@ -42,21 +46,26 @@
                 <option value="Defence Quata   "> Defence Quata  </option>       
              </select>
            </td> 
-        </tr>
-        <tr>
-            <td>
-                <input type="radio" id="html" name="fav_language" value="Divyaang Concession ">
- <label for="Divyaang Concession ">Divyaang Concession </label><br>
- <input type="radio" id="css" name="fav_language" value="flexible With date ">
- <label for="flexible With date ">flexible With date </label><br>
- <input type="radio" id="javascript" name="fav_language" value="Train with Available Berth">
- <label for="Train with Available Berth">Train with Available Berth</label>
-            </td>
-        </tr>
-        <tr>
-            <input type="submit">
+           <td>
+               <p>Choose:</p>
+            <input type="radio" id="html" name="fav_language" value="Divyaang Concession ">
+<label for="Divyaang Concession "> Handicapt Concession </label><br>
+<input type="radio" id="css" name="fav_language" value="flexible With date ">
+<label for="flexible With date ">flexible With date </label><br>
+<input type="radio" id="javascript" name="fav_language" value="Train with Available Berth">
+<label for="Train with Available Berth">Train with Available Berth</label>
+        </td>
+        </tr>        
+        <tr> <td>
+            <br><br>
+            <input class="btn btn-primary" type="submit">
+            <input class="btn btn-primary" type="reset" >
+            <input class="btn btn-danger" type="button" value="Cancle">
+        </td> 
+                    
         </tr>
     </table>
 </form>
+
 </body>
 </html>
